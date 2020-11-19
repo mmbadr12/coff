@@ -33,6 +33,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'upload')));
 //>>------------------------------------------------------->
 
+//--- ---->
+
+//>>-------------------------->
+
 //---- node model-------------->
 app.use(express.static('node_modules'))
 //>>------------------------------------>

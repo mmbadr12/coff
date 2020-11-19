@@ -1,0 +1,29 @@
+ input[type ="file"]::file-selector-button{
+ margin-left: -2%;@import;
+ margin-top: -4%;@import;
+ padding: 0%;@import;
+ background-color: #eeee;@import;
+ color: rgb(7, 7, 6);@import;
+ width: 50%;@import;
+ height: 115%;@import;
+ border: none;@import;
+ border-radius: 5px;@import;
+}
+
+
+input[type ="file"]:hover{
+   
+    background-color: rgb(41, 156, 233);@import;
+    color: blanchedalmond;
+    width: 102%;
+    pointer-events: auto;@import;
+  
+}
+
+
+::placeholder {
+    background-color: rgb(250, 249, 244);
+    font-size: 1.4em;
+    font-family: 'Niconne', cursive;
+}
+   

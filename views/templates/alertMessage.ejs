@@ -1,3 +1,4 @@
+<!---Alert error in forms page --->
 <% if (locals.errors) {%>
     <% errors.forEach((err)=> {%>
         <div class="alert alert-danger">
@@ -5,15 +6,18 @@
         </div>
     <%})%>
 <%}%>
+<!---end error Alert----------- --->
 
 
+<!---Alert success  in index-first  page --->
 <% if (locals.message && message !="") {%>
          
     <div class="alert alert-success">
             <%= message%>
     </div>
   <%}%>     
-      
+ <!---end success Alert------------------>   
+   
 
   <% if (locals.error && error !="") {%>
          
