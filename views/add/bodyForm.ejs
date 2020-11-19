@@ -1,0 +1,107 @@
+
+<!--font-family: 'Pacifico', cursive;-->
+<!--font-family: 'Pacifico', cursive;-->
+
+
+<div class="container" >
+
+    <div class="row mt-3">
+    
+        <div class="col-sm-6 col-md-offset-5"  >
+    
+       <h1 class="display-6" style="font-family: 'Pacifico', cursive;"> Add the Producer</h1>
+            <hr>  
+    
+            <%- include('../templates/alertMessage')%>
+
+            <form action='/create/add' method="post" enctype="multipart/form-data">
+               
+                <div class="form-group">
+    
+                    <label for="title"><h3 style="font-family: 'Niconne', cursive;"> Title :</h3></label>
+    
+                    <input type="text" name="title" id="title" class="form-control" value="">
+                </div>
+    
+    
+                <div class="form-group">
+    
+                    <label for="location"> <h3 style="font-family: 'Niconne', cursive;">Location :</h3></label>
+    
+                    <input type="text" name="location" id="location" class="form-control">
+                </div>
+    
+    
+    
+                <div class="form-group ">
+    
+                    <label for="price"><h3 style="font-family: 'Niconne', cursive;"> Price :</h3></label>
+                     
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+    
+                        <input type="price" name="price" id="price" class="form-control"/>
+                        <div class="input-group-append">
+                            <span class="input-group-text">.00</span>
+                          </div>
+                    </div>
+    
+                </div>
+    
+    
+    
+    
+                <div class="form-group">
+    
+                    <label for="date"> <h3 style="font-family: 'Niconne', cursive;">Date :</h3></label>
+    
+                    <input type="date" name="date" id="date" class="form-control">
+                </div>
+    
+    
+    
+                <div class="form-group">
+    
+                    <label for="description"><h3 style="font-family: 'Niconne', cursive;"> Description :</h3></label>
+                    
+                    <textarea name="description" id="description"  rows="4" class="form-control"></textarea>
+                </div>
+    
+    
+    
+                <!--<div class="custom-file ">
+                    <input type="file" class="custom-file-input shadow-sm p-3 mb-5 bg-white rounded" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04">
+                    <label class="custom-file-label btn-info" for="inputGroupFile04" style="font-family: 'Niconne', cursive; font-size: 20px;"> Choose image</label>
+                  </div>-->
+
+                  <div class="form-group">
+
+                   <label for="image">Image</label>
+  
+                   <input type="file" id="image" name="image" alt="" class="form-control">
+
+                      </div>
+        
+
+
+                   <br> <br>
+
+                  <div class="form-group">
+
+                <button type="submit" class="btn btn-outline-primary btn-block" style="font-family: 'Niconne', cursive; font-size: 25px;">Create</button>
+
+                  </div>
+    
+                
+            </form>
+    
+    
+    
+    
+        </div>
+    
+    </div>
+    
+    
+    
+    </div>

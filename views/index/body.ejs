@@ -1,0 +1,45 @@
+<div class="container" style="width: 100%; overflow-x: hidden; padding-bottom: 30px;">
+    
+
+<div class="row mt-3">
+    <div class="col md-12">
+        <%- include('../templates/alertMessage')%> 
+    </div>      
+        
+        </div>
+
+
+
+<% eve.forEach(ele => { %>
+    <div class="row mt-4">
+        <% ele.forEach(el => { %>
+
+
+  <div class="col-sm-6  col-md-4  col-xs-1 col-lg-4">
+        
+              <div class="card bg-dark text-light" style="width: 18rem;">
+
+   <img src="<%=el.image%> " class="card-img-top img-thumbnail" alt="..." style="width: 100%; height: 200px;">
+        
+                 <div class="card-body">
+            
+                  <p class="card-title"><%=el.title%></p>
+                  <p class="card-title"><%=el.description%> </p>
+                  <p class="card-title"><%=el.location%></p>
+                  <p class="badge badge-secondary" style="width: 100%;"><%=el.date.toDateString()%></p>
+                  <h3 class="card-price">$<%=el.price%></h3>
+              
+                  <a href="<%= '/' + el.id %> " class="btn btn-outline-info">More info</a>
+                </div>
+            
+            </div>
+            
+            </div>
+         
+        <% }) %>
+        
+        </div>
+ 
+<% }) %>
+
+</div>
