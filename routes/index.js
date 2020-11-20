@@ -77,6 +77,19 @@ router.post('/create/add' ,upload.single('image') , doit,(req,res)=>{
 
 });//->>---------------end POST----------------------------------> 
 
+
+
+//-- Get router sing up test-- ---->
+
+router.get('/singup' , (req,res)=>{
+
+    res.render('singUp/index');
+  
+  });
+  
+  //>>--------------------------------------->
+  
+
  
 
 
@@ -89,7 +102,6 @@ router.get('/:id' , (req,res)=>{
 
     })
 });//->>------------------- end GiT:id ----------------------------->
-
 
 
 

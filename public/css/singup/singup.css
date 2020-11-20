@@ -1,0 +1,199 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    background: url('../bg.png') no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: sans-serif;
+  
+}
+
+.container {
+    background-color: rgba(69, 160, 240, 0.56);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.container h1{
+    text-align: center;
+    color: rgb(7, 7, 7);
+    margin-top: 10px;
+    margin-bottom:0;
+
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+   
+
+}
+
+
+.container h1:hover{
+    opacity: 90%;
+    color: rgb(248, 238, 238);
+    font-family: 'Lobster', cursive;
+}
+
+form {
+    width: 348px;
+    margin: 10px auto;
+    height: 500px;
+    background: -webkit-linear-gradient(#d9eaf4 30%, #9ce70f 70%);
+    background: linear-gradient(#d9eaf4 30%, #34f50d 70%);
+    border-radius: 10px;
+    color: #333;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+form .signup {
+    display: block;
+    float: right;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #080808;
+    margin: 35px;
+    font-family: 'Lobster', cursive;
+}
+
+form .signup:hover{
+
+    font-family: Pacifico, cursive;
+    color: #000000;
+   
+}
+
+form label {
+    clear: both;
+    display: block;
+    position: relative;
+}
+
+form label input {
+    display: block;
+    width: 70%;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #bec7d6;
+    outline: none;
+    padding-left: 30px;
+    transition: all .5s ease-in-out;
+    color: #3b3632;
+}
+
+form label i {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    color: #3b3632;
+}
+
+form label input:focus {
+    border-bottom: 2px solid #1c87e5;
+}
+
+form input[type="submit"] {
+    display: block;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 275px;
+    margin: auto;
+    padding: 10px 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px #e8ecf0;
+}
+
+form a.forgot {
+    text-decoration: none;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #000000;
+    text-align: left;
+    margin-left: 35px;
+    font-family: 'Lobster', cursive;
+}
+
+form a.forgot:hover{
+ 
+    color: #020202;
+    
+    font-family: 'Lobster', cursive;
+}
+
+
+form .links {
+    background-color: #050e16;
+    color: #FFF;
+    margin-top: 30px;
+    padding: 20px 0 40px;
+}
+
+form .links h4 {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #d9eaf4;
+}
+form .links i {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+
+form .links :hover {
+
+    background-color: #050e16;
+    color: rgb(34, 124, 241);
+ 
+}
+
+#cont:hover{
+
+ color: rgb(207, 51, 51);@import;
+
+}
+  
+#in:hover{
+
+    color: rgb(117, 243, 191);@import;
+   
+}
+
+.form-group:hover{
+
+ box-shadow: -1px 2px 2px rgb(68, 129, 241);@import;
+ width: 357px;
+
+ height: 500px;
+ border: none;@import;
+
+}
+#user{ color:  rgb(61, 137, 250);}
+
+#key{ color: rgb(61, 137, 250);}
+
+#user:hover{ color:  rgb(113, 236, 42);}
+
+#key:hover{ color: rgb(35, 94, 8);}
+
+#date{
+ 
+    color:rgb(113, 236, 42);
+}
+#date:hover{
+ 
+    color:rgb(8, 8, 7);
+    font-family: 'Lobster', cursive;
+}

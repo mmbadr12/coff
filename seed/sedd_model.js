@@ -10,7 +10,7 @@ const DataE =[
     description:'test the thusen time', 
     location:'oslo',
     date: Date.now(),
-    image: 'https://picsum.photos/200/300/?blur=2',
+    image: 'image-1605835790767.jpg',
     price: 10
   }),
   new Schema({
@@ -19,7 +19,7 @@ const DataE =[
     description:'bad experenc ',
     location:'german',
     date: Date.now(),
-    image: 'https://picsum.photos/200/300?grayscale',
+    image: 'image-1605767739222.jpg',
     price:30
     
 
@@ -30,7 +30,7 @@ const DataE =[
     description:'use many system ',
     location:'usa',
     date: Date.now(),
-    image: 'https://picsum.photos/200/200',
+    image: 'image-1605832192548.jpg',
     price:60
     
 

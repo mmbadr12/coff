@@ -1,3 +1,6 @@
+// --TO RUN PROJECT => (npm run start)---->
+
+//--- heer what labary i used ---->
 const express = require('express');
 const db = require('./config/database');
 const flash = require('connect-flash');
