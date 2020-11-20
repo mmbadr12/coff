@@ -1,0 +1,29 @@
+body{
+
+    margin: 0%;
+    padding: 0%;
+    background-image: linear-gradient(to left ,rgb(250, 250, 250),rgb(227, 241, 237));
+  
+}
+
+ul li {
+
+ display: block;@import;
+ color: blue;
+ cursor: pointer;
+}
+
+#google{color: rgb(220, 207, 20);}
+#google:hover{color: crimson;}
+
+#in{  color: rgb(56, 132, 247);}
+#in:hover{  color: rgb(66, 247, 111);}
+
+#twitter{color: turquoise;}
+#twitter:hover{color: rgb(67, 151, 247);}
+
+
+.copy{
+    font-size: 20px; 
+    font-family: 'Lobster', cursive;
+}

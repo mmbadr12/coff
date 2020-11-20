@@ -81,16 +81,26 @@ router.post('/create/add' ,upload.single('image') , doit,(req,res)=>{
 
 //-- Get router sing up test-- ---->
 
-router.get('/singup' , (req,res)=>{
+/*router.get('/singup' , (req,res)=>{
 
     res.render('singUp/index');
+  
+  });*/
+  
+  //>>--------------------------------------->
+  
+
+ //-- Get router sing up test-- ---->
+
+router.get('/about' , (req,res)=>{
+
+    res.render('about/index');
   
   });
   
   //>>--------------------------------------->
   
 
- 
 
 
 //------ this to git one event from id ----------------->
