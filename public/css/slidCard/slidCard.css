@@ -7,9 +7,11 @@ html, body{
     padding-top: 20px;
     text-align:center;
   }
-  h2{
-    font-family:sans-serif;
+  #h2{
+    
     color:#fff;
+    text-align: center;
+    text-shadow: 1px 2px 3px rgb(0, 0, 0);
   }
   .carousel{
     width:90%;
@@ -20,18 +22,21 @@ html, body{
   }
   .slick-slide img{
     width:100%;
+    
   }
   .slick-prev, .slick-next{
-    background: #000;
+    background: rgb(2, 2, 2);
     border-radius: 15px;
     border-color: transparent;
+    
   }
   .card{
-    border: 2px solid #fff;
-    box-shadow: 1px 1px 15px #ccc;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 1px 2px 3px rgb(0, 0, 0);
+    
   }
   .card-body{
-    background: #fff;
+    background: rgb(10, 10, 10);
     width: 100%;
     vertical-align: top;
   }

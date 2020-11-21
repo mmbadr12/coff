@@ -104,6 +104,7 @@ router.get('/about' , (req,res)=>{
 
 
 //------ this to git one event from id ----------------->
+
 router.get('/:id' , (req,res)=>{
 
     Schema.findOne({_id:req.params.id},(error,project)=>{

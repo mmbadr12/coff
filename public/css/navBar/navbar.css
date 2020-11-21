@@ -1,0 +1,48 @@
+/*--------nav bar -----------------*/
+#navbars
+{padding: 0%;
+ opacity: 90%;
+ background-color: #000000;
+ border: none;
+ outline: none;
+}
+/*-------------------------------------------------*/
+
+/*--------nav bar style description-----------------*/
+#brand
+{font-family: 'Niconne', cursive; 
+ font-size: 30px;
+ text-shadow: 1px 2px 3px rgb(0, 0, 0);
+ color: white;
+ 
+}
+#brand:hover
+{background-color:#fafafa; 
+ color: rgb(0, 0, 0);
+ font-family: 'Niconne', cursive; 
+ font-size: 30px; padding-left:10px;
+ text-shadow: 1px 2px 3px rgb(0, 0, 0);
+ border-radius: 40px 40px 40px;
+ height: -1px;   
+}
+/*---------------------------------------------------------*/
+
+/*---------nav bar style add proudect ---------------------*/
+#add
+{font-family: 'Niconne', cursive; 
+ font-size: 30px;
+ text-shadow: 1px 2px 3px rgb(0, 0, 0);
+ color: white;
+}
+#add:hover
+{background-color: #f9dbbd; 
+ color: rgb(0, 0, 0);
+ font-family: 'Niconne', cursive; 
+ font-size: 30px; padding-left:10px;
+ text-shadow: 1px 2px 3px rgb(0, 0, 0);
+ border-radius: 40px 40px 40px     ;
+ height: -1px;
+}
+/*---------------------------------------------------------*/
+
+

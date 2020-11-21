@@ -15,10 +15,10 @@
     <div class="row mt-4">
     <% ele.forEach(el => { %>
         <div class="col-sm-6  col-md-4  col-xs-1 col-lg-4">
-            <div class="card bg-dark text-light" style="width: 18rem;">
+            <div class="card  text-light" style="width: 18rem;">
                <img src="<%=el.image%> " class="card-img-top img-thumbnail" alt="..." style="width: 100%; height: 200px;">
         
-                <div class="card-body">
+                <div class="card-body text-dark " style="background-color: white;" >
                   <p class="card-title"><%=el.title%></p>
                   <p class="card-title"><%=el.description%> </p>
                   <p class="card-title"><%=el.location%></p>
