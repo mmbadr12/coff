@@ -1,17 +1,14 @@
-body{
+body{ margin: 0%; padding: 0%; }
 
-    margin: 0%;
-    padding: 0%;
-   
-  
-}
-
+/* --------Display link first page -------------*/
 ul li {
-
- display: block;@import;
- color: blue;
- cursor: pointer;
+display: block;@import;
+color: blue;
+cursor: pointer;
 }
+/* ---------------------------------------------*/
+
+
 /* style linke first page*/
 #facebook{ color: rgb(7, 31, 250);}
 #facebook:hover{
@@ -59,6 +56,6 @@ text-decoration: none;
 }
 /* ---------------------------------------------*/
 .copy{
-    font-size: 20px; 
-    font-family: 'Lobster', cursive;
+font-size: 20px; 
+font-family: 'Lobster', cursive;
 }
