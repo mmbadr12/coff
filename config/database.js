@@ -1,7 +1,12 @@
 //---- connect server mongoDB use mongoose ----->
+/**
+ * - require dotenv importing 
+ */
+
+require('dotenv').config();
 const db = require('mongoose');
 
-db.connect('mongodb://localhost:27017/data', {
+db.connect(process.env.MONGODB_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false,

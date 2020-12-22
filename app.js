@@ -1,13 +1,23 @@
 // --TO RUN PROJECT => (npm run start)---->
 
+/**
+ * - sitting app with envermant libraly
+ */
+
+if(process.env.NODE_ENV !== 'production'){
+ 
+  require('dotenv').config();
+
+}
 //--- heer what labary i used ---->
+const createError = require('http-errors')
 const express = require('express');
 const db = require('./config/database');
 const flash = require('connect-flash');
 const session = require('express-session')
+const logger = require('morgan');
 const bodyparser = require('body-parser');
 const path = require('path');
-const PORT = 8080;
 
 
 const app = express();
@@ -22,6 +32,10 @@ app.set('views' , path.join(__dirname , '/views'));
 app.set('view engine' , 'ejs');
 //>>------------------------------------------------------->
 
+// -- loger for sever
+  app.use(logger('dev'));
+//>>------------------------------------------------------->
+  
 // -- body parser import to get information -->
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended:false}));
@@ -36,9 +50,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'upload')));
 //>>------------------------------------------------------->
 
-//--- ---->
-
-//>>-------------------------->
 
 //---- node model-------------->
 app.use(express.static('node_modules'))
@@ -64,15 +75,25 @@ app.use('/' , indexRoter);
 //>>---------------------------->
 
 
-//--- this if the port pasy can cheng to secend localhost -->
-app.PORT = process.env.PORT || 3000
-//>>------------------------------------->
+//--  catch 404 and forward to error handler -->
+app.use((req,res,next) => {  next(createError(404)) });
 
-//--------this project worck the lisent and with message -->
-app.listen(PORT, (error)=>{
 
-  console.log(`port connect ${PORT}`);
-  console.error(`the error port:${PORT}`,error);
-  
+//-- error handler
+app.use((err,req,res,next)=>{
+
+// set locals, only providing error in development
+    res.locals.message = err.message;
+    res.locals.error = req.app.get('env') === 'development' ? err : {};
+    // render the error page
+    res.status(err.status || 500);
+    res.render('error');
+
 });
-//>>-------------------------------------------------->
+
+
+//--- this if the port pasy can cheng to secend localhost -->
+const PORT = process.env.PORT || 3000
+//--------this project worck the lisent and with message -->
+app.listen(PORT, () => console.log(`port connect  http://localhost:${PORT}`));
+//>>---------------------------->
